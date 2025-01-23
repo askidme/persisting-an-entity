@@ -113,6 +113,7 @@ class PersistingAnEntityApplicationTests {
 
     }
 
+
     private Student generateStudent(){
         return new Student("Alisa Simmons", "2022AN50123",10);
     }

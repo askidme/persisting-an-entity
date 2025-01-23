@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 @Slf4j
 public class StudentClient implements ApplicationRunner {

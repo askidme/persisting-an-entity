@@ -17,17 +17,17 @@ public class StudentService {
         return studentRepository.save(student);
     }
 
-    public void deleteUser(Long id){
+    public void deleteUser(Long id) {
         studentRepository.deleteById(id);
-        log.info("user by id "+id+" deleted");
+        log.info("user by id {} deleted", id);
     }
 
-    public Student getStudentById(Long id){
+    public Student getStudentById(Long id) {
         return studentRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Student with id " + id + " not found"));
     }
 
-    public boolean studentExists(Long id){
+    public boolean studentExists(Long id) {
         return studentRepository.existsById(id);
     }
 }
