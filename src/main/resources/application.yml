@@ -6,12 +6,20 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+#    hikari:
+#      auto-commit: false
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+#        connection:
+#          provider_disables_autocommit: true
     hibernate:
       ddl-auto: update
     show-sql: true
-
+logging:
+  level:
+    com:
+      zaxxer:
+        hikari: TRACE
